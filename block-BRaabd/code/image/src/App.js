@@ -1,5 +1,4 @@
 import Button from './component/button';
-import Image from './component/image';
 import './style/buttons.css';
 
 function App() {
@@ -12,9 +11,6 @@ function App() {
         <Button btnName={'phone'} />
         <Button btnName={'laptop'} />
         <Button btnName={'cricket'} />
-      </div>
-      <div className="image">
-        <Image />
       </div>
     </>
   );
