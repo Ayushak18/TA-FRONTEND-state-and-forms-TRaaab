@@ -1,10 +1,9 @@
 import React from 'react';
-import Image from './image';
 import '../style/button.css';
 
-class Button extends React.Component {
+class Section extends React.Component {
   constructor(props) {
-    super();
+    super(props);
     this.state = {
       image: '',
     };
@@ -19,10 +18,16 @@ class Button extends React.Component {
     return (
       <>
         <button onClick={this.changeImg}>{this.props.btnName}</button>
-        <Image imageName={this.state.image} />
+        {this.state.image ? (
+          <div className="section">
+            <img src={`assets/${this.props.btnName}.jpg`} alt="Basketball" />
+          </div>
+        ) : (
+          ''
+        )}
       </>
     );
   }
 }
 
-export default Button;
+export default Section;
