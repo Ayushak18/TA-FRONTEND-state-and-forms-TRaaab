@@ -1,0 +1,14 @@
+body {
+  text-align: center;
+}
+
+.status {
+  display: inline-block;
+  border: rgb(255, 115, 115) 1px solid;
+}
+
+h1 {
+  margin: 0;
+  padding: 2px 5px;
+  color: rgb(255, 115, 115);
+}
