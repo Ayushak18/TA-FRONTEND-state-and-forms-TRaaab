@@ -7,7 +7,6 @@ class App extends React.Component {
     this.state = {
       counter: 0,
       step: 1,
-      active: '',
       maxValue: Infinity,
     };
   }
