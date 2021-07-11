@@ -36,10 +36,8 @@ class App extends React.Component {
 
   setStep = (event) => {
     let step = Number(event.target.innerText);
-    // event.target.className = 'active';
     this.setState({
       step: step,
-      // active: 'active',
     });
   };
 
@@ -59,16 +57,46 @@ class App extends React.Component {
         <div className="steps">
           <h2>Steps</h2>
           <div>
-            <button onClick={(event) => this.setStep(event)}>5</button>
-            <button onClick={(event) => this.setStep(event)}>10</button>
-            <button onClick={(event) => this.setStep(event)}>15</button>
+            <button
+              className={this.state.step === 5 ? 'active' : ''}
+              onClick={(event) => this.setStep(event)}
+            >
+              5
+            </button>
+            <button
+              className={this.state.step === 10 ? 'active' : ''}
+              onClick={(event) => this.setStep(event)}
+            >
+              10
+            </button>
+            <button
+              className={this.state.step === 15 ? 'active' : ''}
+              onClick={(event) => this.setStep(event)}
+            >
+              15
+            </button>
           </div>
         </div>
         <div>
           <h2>Max Value</h2>
-          <button onClick={(event) => this.setMax(event)}>15</button>
-          <button onClick={(event) => this.setMax(event)}>100</button>
-          <button onClick={(event) => this.setMax(event)}>200</button>
+          <button
+            className={this.state.maxValue === 15 ? 'active' : ''}
+            onClick={(event) => this.setMax(event)}
+          >
+            15
+          </button>
+          <button
+            className={this.state.maxValue === 100 ? 'active' : ''}
+            onClick={(event) => this.setMax(event)}
+          >
+            100
+          </button>
+          <button
+            className={this.state.maxValue === 200 ? 'active' : ''}
+            onClick={(event) => this.setMax(event)}
+          >
+            200
+          </button>
         </div>
         <div>
           <button onClick={this.handleIncrement}>Increament</button>
