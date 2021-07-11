@@ -1,0 +1,15 @@
+body {
+  text-align: center;
+  padding: 100px;
+}
+
+button {
+  margin: 10px;
+  cursor: pointer;
+  border: black 1px solid;
+  padding: 5px 8px;
+}
+
+.active {
+  background: cornflowerblue;
+}
