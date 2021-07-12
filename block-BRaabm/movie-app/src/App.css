@@ -1,0 +1,27 @@
+body {
+  text-align: center;
+  margin: 50px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.movie {
+  border: 1px solid black;
+  margin: 40px 0;
+}
+
+img {
+  width: 500px;
+}
+
+.show a {
+  color: coral;
+  display: none;
+}
+
+.movie:hover .show a {
+  display: block;
+}
