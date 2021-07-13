@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces&family=Lato&family=Potta+One&family=Roboto&family=Yusei+Magic&display=swap');
+
+body {
+  text-align: center;
+}
+
+input {
+  padding: 10px;
+  color: black;
+}
+
+.Roboto {
+  font-family: 'Roboto', sans-serif;
+}
+
+.Potta {
+  font-family: 'Potta One', cursive;
+}
+
+.Lato {
+  font-family: 'Lato', sans-serif;
+}
+
+.Fraunces {
+  font-family: 'Fraunces', serif;
+}
+
+.Yusei {
+  font-family: 'Yusei Magic', sans-serif;
+}
