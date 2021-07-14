@@ -1,0 +1,14 @@
+input {
+  margin: 10px 0;
+}
+
+.flex {
+  padding: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.check {
+  margin-left: 20px;
+}
