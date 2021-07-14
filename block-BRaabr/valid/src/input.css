@@ -1,0 +1,11 @@
+label {
+  display: block;
+  margin: 10px;
+}
+
+.inputs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
